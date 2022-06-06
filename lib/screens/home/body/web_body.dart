@@ -72,6 +72,11 @@ class WebBody extends StatelessWidget {
                   ),
                   Container(
                     padding: EdgeInsets.all(kDefaultPadding),
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      color: kSecColor,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
                     child: Column(
                       children: [
                         Image.asset(
@@ -79,6 +84,26 @@ class WebBody extends StatelessWidget {
                           width: 300,
                           height: 300,
                           fit: BoxFit.cover,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: kDefaultPadding / 2),
+                          child: Text(
+                            "Care and hugiene dogs",
+                            style: TextStyle(
+                              fontSize: 28,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black54,
+                          ),
                         ),
                       ],
                     ),
