@@ -25,6 +25,10 @@ class WebBody extends StatelessWidget {
               child: Column(
                 children: [
                   IconContainerCard(),
+                  Divider(),
+                  SizedBox(
+                    height: kDefaultPadding / 2,
+                  ),
                   Padding(
                     padding:
                         const EdgeInsets.symmetric(horizontal: kDefaultPadding),
@@ -66,6 +70,19 @@ class WebBody extends StatelessWidget {
                       ),
                     ],
                   ),
+                  Container(
+                    padding: EdgeInsets.all(kDefaultPadding),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "assets/images/care.png",
+                          width: 300,
+                          height: 300,
+                          fit: BoxFit.cover,
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),

@@ -68,7 +68,7 @@ class IconContainer extends StatelessWidget {
         onTap: () {
           press!;
         },
-        child: Column(
+        child: Wrap(
           children: [
             Column(
               children: [
@@ -84,7 +84,7 @@ class IconContainer extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: kDefaultPadding / 2,
+                  width: kDefaultPadding / 2,
                 ),
                 Text(
                   text!,
